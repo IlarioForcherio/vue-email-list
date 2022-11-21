@@ -41,7 +41,9 @@
    <button class="btn btn-danger" @click="generaMail">Genera Mail</button>
 
    <ul>
-    <li>{{testo}}</li>
+    <li v-for="(elem,index) in randomMailArray.length">
+      {{elem}}
+    </li>
     
    </ul>
 

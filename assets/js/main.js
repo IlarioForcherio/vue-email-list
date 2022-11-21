@@ -64,22 +64,22 @@ generaMail(){
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((oggetto)=>{
            
-            //console.log(oggetto.data.response);
-           let randomMail = oggetto.data.response;
-           this.randomMail = randomMail;
-           //console.log(randomMail);
-           console.log(randomMail);
-           //creo variabile array
-           let randomMailArray = [];
+        
+           this.randomMail = oggetto.data.response;
+           
+          
            //pusho gli elementi ottenuti dal ciclo nell-array vuoto
-           randomMailArray.push(randomMail)
-           console.log(randomMailArray);
+            this.randomMailArray.push(randomMail) 
+             
+          
+           //associo l-array rycavato all-array dei data
+           //this.randomMailArray = randomMailArray
+           console.log(this.randomMailArray)
 
 
         })
 
-            
-        
+      
     }
     
 }
