@@ -65,16 +65,13 @@ generaMail(){
         .then((oggetto)=>{
            
         
-           this.randomMail = oggetto.data.response;
+           //this.randomMail = oggetto.data.response;
            
           
            //pusho gli elementi ottenuti dal ciclo nell-array vuoto
-            this.randomMailArray.push(randomMail) 
+            this.randomMailArray.push(oggetto.data.response) 
              
-          
-           //associo l-array rycavato all-array dei data
-           //this.randomMailArray = randomMailArray
-           console.log(this.randomMailArray)
+            console.log(this.randomMailArray)
 
 
         })
